@@ -1,6 +1,8 @@
 
 package tictactoc;
 
+import java.awt.Color;
+
 public class TicTacToc extends javax.swing.JFrame {
 
 
@@ -409,11 +411,26 @@ public class TicTacToc extends javax.swing.JFrame {
         { for(int j=0; j<3; j++)
            plansza[i][j] = " ";
         }
+        
+        //przywrócenie standardowego koloru przycisków
+        jButton1.setBackground(new Color(228,233,237));
+        jButton2.setBackground(new Color(228,233,237));
+        jButton3.setBackground(new Color(228,233,237));
+        jButton4.setBackground(new Color(228,233,237));
+        jButton5.setBackground(new Color(228,233,237));
+        jButton6.setBackground(new Color(228,233,237));
+        jButton7.setBackground(new Color(228,233,237));
+        jButton8.setBackground(new Color(228,233,237));
+        jButton9.setBackground(new Color(228,233,237));
+        jButton10.setBackground(new Color(228,233,237));
+        jButton12.setBackground(new Color(228,233,237));
+        jButton13.setBackground(new Color(228,233,237));
+        jButton14.setBackground(new Color(228,233,237));
+        
     }
 
     public void disable()
     {
-  
         jButton1.setEnabled(false);
         jButton2.setEnabled(false);
         jButton3.setEnabled(false);
@@ -427,8 +444,8 @@ public class TicTacToc extends javax.swing.JFrame {
         jButton12.setEnabled(false);
         jButton13.setEnabled(false);
         jButton14.setEnabled(false);
- 
     }
+    
     
     public void sprawdzWygrana()
     {
@@ -442,8 +459,8 @@ public class TicTacToc extends javax.swing.JFrame {
             System.out.println("Gratulacje wygranej: " + obecnySymbol);
             disable();
         }
+        zmienKolorWygranychPol(obecnySymbol);
     }
-    
     
     
        public static boolean sprawdzWiersze(String[][] plansza, String symbol)
@@ -504,6 +521,61 @@ public class TicTacToc extends javax.swing.JFrame {
             return true;
         else
             return false;
+    }
+    
+    public void zmienKolorWygranychPol(String symbol)
+    {
+        // zmiana w na skosach
+        if(plansza[0][0]==symbol && plansza[1][1]==symbol && plansza[2][2]==symbol)
+        {
+        jButton13.setBackground(new Color(0,255,0));
+        jButton8.setBackground(new Color(0,255,0));
+        jButton10.setBackground(new Color(0,255,0));
+        }
+        else if(plansza[0][2]==symbol && plansza[1][1]==symbol && plansza[2][0]==symbol)
+        {
+        jButton1.setBackground(new Color(0,255,0));
+        jButton8.setBackground(new Color(0,255,0));
+        jButton14.setBackground(new Color(0,255,0));
+        }
+        // zmiana w poziomie
+        else if(plansza[0][0]==symbol && plansza[0][1]==symbol && plansza[0][2]==symbol)
+        {
+        jButton13.setBackground(new Color(0,255,0));
+        jButton12.setBackground(new Color(0,255,0));
+        jButton14.setBackground(new Color(0,255,0));
+        }
+        else if(plansza[1][0]==symbol && plansza[1][1]==symbol && plansza[1][2]==symbol)
+        {
+        jButton2.setBackground(new Color(0,255,0));
+        jButton8.setBackground(new Color(0,255,0));
+        jButton5.setBackground(new Color(0,255,0));
+        }
+        else if(plansza[2][0]==symbol && plansza[2][1]==symbol && plansza[2][2]==symbol)
+        {
+        jButton1.setBackground(new Color(0,255,0));
+        jButton9.setBackground(new Color(0,255,0));
+        jButton10.setBackground(new Color(0,255,0));
+        }
+        // zmiana w pionie
+        else if(plansza[0][0]==symbol && plansza[1][0]==symbol && plansza[2][0]==symbol)
+        {
+        jButton13.setBackground(new Color(0,255,0));
+        jButton2.setBackground(new Color(0,255,0));
+        jButton1.setBackground(new Color(0,255,0));
+        }
+        else if(plansza[0][1]==symbol && plansza[1][1]==symbol && plansza[2][1]==symbol)
+        {
+        jButton12.setBackground(new Color(0,255,0));
+        jButton8.setBackground(new Color(0,255,0));
+        jButton9.setBackground(new Color(0,255,0));
+        }
+        else if(plansza[0][2]==symbol && plansza[1][2]==symbol && plansza[2][2]==symbol)
+        {
+        jButton14.setBackground(new Color(0,255,0));
+        jButton5.setBackground(new Color(0,255,0));
+        jButton10.setBackground(new Color(0,255,0));
+        }
     }
     
    
