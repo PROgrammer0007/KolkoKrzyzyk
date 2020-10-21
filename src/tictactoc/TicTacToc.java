@@ -222,6 +222,8 @@ public class TicTacToc extends javax.swing.JFrame {
         
         // wyświetlenie obecnego symbolu na przycisku
         jButton13.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton13.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[0][0] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -239,6 +241,8 @@ public class TicTacToc extends javax.swing.JFrame {
         
         // wyświetlenie obecnego symbolu na przycisku
         jButton12.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton12.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[0][1] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -255,6 +259,8 @@ public class TicTacToc extends javax.swing.JFrame {
         
         // wyświetlenie obecnego symbolu na przycisku
         jButton2.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton2.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[1][0] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -271,6 +277,9 @@ public class TicTacToc extends javax.swing.JFrame {
         
         // wyświetlenie obecnego symbolu na przycisku
         jButton8.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        
+        jButton8.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[1][1] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -288,6 +297,8 @@ public class TicTacToc extends javax.swing.JFrame {
         // wyświetlenie obecnego symbolu na przycisku
         jButton1.setText(obecnySymbol);
         // zapis obecnego symbolu do tabeli
+        // zmien kolor wcisnietego przycisku
+        jButton1.setBackground(new Color(255,255,255));
         plansza[2][0] = obecnySymbol;
         // sprawdza czy gracz wygrał
         sprawdzWygrana();
@@ -303,6 +314,8 @@ public class TicTacToc extends javax.swing.JFrame {
 
         // wyświetlenie obecnego symbolu na przycisku
         jButton9.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton9.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[2][1] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -318,6 +331,8 @@ public class TicTacToc extends javax.swing.JFrame {
 
         // wyświetlenie obecnego symbolu na przycisku
         jButton10.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton10.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[2][2] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -334,6 +349,8 @@ public class TicTacToc extends javax.swing.JFrame {
 
         // wyświetlenie obecnego symbolu na przycisku
         jButton5.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton5.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[1][2] = obecnySymbol;
         // sprawdza czy gracz wygrał
@@ -348,6 +365,8 @@ public class TicTacToc extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // wyświetlenie obecnego symbolu na przycisku
         jButton14.setText(obecnySymbol);
+        // zmien kolor wcisnietego przycisku
+        jButton14.setBackground(new Color(255,255,255));
         // zapis obecnego symbolu do tabeli
         plansza[0][2] = obecnySymbol;
         // sprawdza czy gracz wygrał
